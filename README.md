@@ -1,8 +1,8 @@
-# Device Battery Management Controller
+# Microchip MCP73871 Battery Charge Management Controller
 Library containing application specific code for battery management charge controller
 
 
-## Battery Management States
+## Battery Charge Controller States
 ```
   TEMPERATURE_TIMER_FAULT, // 000: L L L
   CHARGING_INPUT_PRESENT,  // 001: L L Hi-Z
