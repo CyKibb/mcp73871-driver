@@ -4,18 +4,15 @@ Library containing application specific code for battery management charge contr
 
 ## Battery Management States
 ```
-  1. TEMPERATURE_TIMER_FAULT, // 000: L L L
-  2. CHARGING_INPUT_PRESENT,  // 001: L L Hi-Z
-  3. CHARGING_IN_PROGRESS,    // 010: L Hi-Z L (Precond Constant Current, Voltage)
-  4. LOW_BATTERY_OUTPUT,      // 011: Hi-Z L L
-  5. CHARGE_COMPLETE_STANDBY, // 100: Hi-Z L L
-  6. UNKNOWN_STATE,           // 101: Not specified
-  7. NO_BATTERY_PRESENT,                     // 110: Hi-Z Hi-Z L
-  8. NO_INPUT_POWER_PRESENT_SHUTDOWN,   // 111: Hi-Z Hi-Z Hi-Z
-  9. BATTERY_UNDER_VOLTAGE,
-  10. BATTERY_OVER_VOLTAGE,
-  11. BATTERY_NOMINAL_STATE,
-  12. BMS_ERROR_STATE
+  TEMPERATURE_TIMER_FAULT, // 000: L L L
+  CHARGING_INPUT_PRESENT,  // 001: L L Hi-Z
+  CHARGING_IN_PROGRESS,    // 010: L Hi-Z L (Precond Constant Current, Voltage)
+  LOW_BATTERY_OUTPUT,      // 011: Hi-Z L L
+  CHARGE_COMPLETE_STANDBY, // 100: Hi-Z L L
+  UNKNOWN_STATE,           // 101: Not specified
+  NO_BATTERY_PRESENT,      // 110: Hi-Z Hi-Z L
+  NO_INPUT_POWER_PRESENT_SHUTDOWN, // 111: Hi-Z Hi-Z Hi-Z
+  MCP_ERROR_STATE
 ```
 
 ## MCP73871 Charge Controller
